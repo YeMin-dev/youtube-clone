@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>YouTube Clone</title>
 
+    <link rel="icon" href="images/icons/logo.webp" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,27 +27,35 @@
           src="images/icons/hamburger-menu.svg"
           alt="hamburger-menu"
         />
-        <img
-          class="youtube-logo"
-          src="images/icons/youtube-logo.svg"
-          alt="youtube-logo"
-        />
+        <a href="https://www.youtube.com/">
+          <img
+            class="youtube-logo"
+            src="images/icons/youtube-logo.svg"
+            alt="youtube-logo"
+          />
+        </a>
       </div>
       <div class="middle-section">
-        <input class="search-bar" type="text" placeholder="Search" />
-        <button class="search-button">
-          <img class="search" src="images/icons/search.svg" alt="search" />
-          <div class="tooltip">Search</div>
-        </button>
-
-        <button class="voice-button">
-          <img
-            class="voice"
-            src="images/icons/voice-search-icon.svg"
-            alt="voice-search-icon"
+        <form action="https://www.youtube.com/results">
+          <input
+            class="search-bar"
+            type="text"
+            placeholder="Search"
+            name="search_query"
           />
-          <div class="tooltip">Search with your voice</div>
-        </button>
+          <button class="search-button" type="submit">
+            <img class="search" src="images/icons/search.svg" alt="search" />
+            <div class="tooltip">Search</div>
+          </button>
+          <button class="voice-button">
+            <img
+              class="voice"
+              src="images/icons/voice-search-icon.svg"
+              alt="voice-search-icon"
+            />
+            <div class="tooltip">Search with your voice</div>
+          </button>
+        </form>
       </div>
       <div class="right-section">
         <img class="upload" src="images/icons/upload.svg" alt="upload" />
@@ -67,174 +77,258 @@
     </header>
 
     <aside>
-      <div class="sidebar-link">
-        <img src="images/icons/home.svg" alt="home" />
-        <div>Home</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="images/icons/explore.svg" alt="explore" />
-        <div>Explore</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="images/icons/subscriptions.svg" alt="subscriptions" />
-        <div>Subscriptions</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="images/icons/originals.svg" alt="originals" />
-        <div>Originals</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="images/icons/youtube-music.svg" alt="YouTube Music" />
-        <div>YouTube Music</div>
-      </div>
-      <div class="sidebar-link">
-        <img src="images/icons/library.svg" alt="library" />
-        <div>Library</div>
-      </div>
+      <a href="https://www.youtube.com/">
+        <div class="sidebar-link">
+          <img src="images/icons/home.svg" alt="home" />
+          <div>Home</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/shorts">
+        <div class="sidebar-link">
+          <img src="images/icons/youtube-shorts.svg" alt="shorts" />
+          <div>Shorts</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/feed/subscriptions">
+        <div class="sidebar-link">
+          <img src="images/icons/subscriptions.svg" alt="subscriptions" />
+          <div>Subscriptions</div>
+        </div>
+      </a>
+      <a href="https://www.youtube.com/feed/you">
+        <div class="sidebar-link">
+          <img src="images/icons/library.svg" alt="library" />
+          <div>You</div>
+        </div>
+      </a>
     </aside>
 
     <main>
       <div class="video-grid">
         <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="images/thumbnail-1.avif" alt="mkbhd" />
+          <a
+            href="https://www.youtube.com/watch?v=hOi8s2wkX4A&pp=ygUlQXBwbGUgVmlzaW9uIFBybyBpcyBNaXNzaW5nIFNvbWV0aGluZw%3D%3D"
+          >
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="images/thumbnail-1.avif"
+                alt="mkbhd"
+              />
 
-            <div class="time"><p>13:48</p></div>
-          </div>
+              <div class="time"><p>13:48</p></div>
+            </div>
+          </a>
           <div class="video-info-grid">
             <div class="channel-picture">
-              <img
-                class="profile-picture"
-                src="images/channel-pictures/profile-1.jpg"
-                alt="mkbhd-profile"
-              />
+              <a href="https://www.youtube.com/@mkbhd">
+                <img
+                  class="profile-picture"
+                  src="images/channel-pictures/profile-1.jpg"
+                  alt="mkbhd-profile"
+                />
+              </a>
             </div>
             <div class="video-info">
-              <p class="video-title">
-                Apple Vision Pro is Missing Something...
-              </p>
-              <p class="video-author">Marques Brownlee</p>
+              <a
+                href="https://www.youtube.com/watch?v=hOi8s2wkX4A&pp=ygUlQXBwbGUgVmlzaW9uIFBybyBpcyBNaXNzaW5nIFNvbWV0aGluZw%3D%3D"
+              >
+                <p class="video-title">
+                  Apple Vision Pro is Missing Something...
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@mkbhd">
+                <p class="video-author">Marques Brownlee</p>
+              </a>
               <p class="video-stats">3.3M views &#xb7; 3 weeks ago</p>
             </div>
           </div>
         </div>
 
         <div class="video-preview">
-          <div class="thumbnail-row">
-            <img
-              class="thumbnail"
-              src="images/thumbnail-2.avif"
-              alt="tonight-show"
-            />
+          <a
+            href="https://www.youtube.com/watch?v=YyUy78wimsE&t=1s&pp=ygU9TWlsbGllIEJvYmJ5IEJyb3duIFJldmVhbHMgSmFrZSBCb25naW92aSBQcm9wb3NlZCBVbmRlcndhdGVyIA%3D%3D"
+          >
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="images/thumbnail-2.avif"
+                alt="tonight-show"
+              />
 
-            <div class="time"><p>10:21</p></div>
-          </div>
+              <div class="time"><p>10:21</p></div>
+            </div>
+          </a>
           <div class="video-info-grid">
             <div class="channel-picture">
-              <img
-                class="profile-picture"
-                src="images/channel-pictures/profile-2.jpg"
-                alt="tonight-profile"
-              />
+              <a href="https://www.youtube.com/@fallontonight">
+                <img
+                  class="profile-picture"
+                  src="images/channel-pictures/profile-2.jpg"
+                  alt="tonight-profile"
+                />
+              </a>
             </div>
             <div class="video-info">
-              <p class="video-title">
-                Millie Bobby Brown Reveals Jake Bongiovi Proposed Underwater ...
-              </p>
-              <p class="video-author">The Tonight Show Starring Jimmy Fallon</p>
+              <a
+                href="https://www.youtube.com/watch?v=YyUy78wimsE&t=1s&pp=ygU9TWlsbGllIEJvYmJ5IEJyb3duIFJldmVhbHMgSmFrZSBCb25naW92aSBQcm9wb3NlZCBVbmRlcndhdGVyIA%3D%3D"
+              >
+                <p class="video-title">
+                  Millie Bobby Brown Reveals Jake Bongiovi Proposed Underwater
+                  ...
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@fallontonight">
+                <p class="video-author">
+                  The Tonight Show Starring Jimmy Fallon
+                </p>
+              </a>
               <p class="video-stats">933K views &#xb7; 5 days ago</p>
             </div>
           </div>
         </div>
 
         <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="images/thumbnail-3.avif" alt="dune" />
-            <div class="time"><p>2:40</p></div>
-          </div>
+          <a href="https://www.youtube.com/watch?v=U2Qp5pL3ovA&t=20s">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="images/thumbnail-3.avif" alt="dune" />
+              <div class="time"><p>2:40</p></div>
+            </div>
+          </a>
           <div class="video-info-grid">
             <div class="channel-picture">
-              <img
-                class="profile-picture"
-                src="images/channel-pictures/profile-3.jpg"
-                alt="wb-profile"
-              />
+              <a href="https://www.youtube.com/@WarnerBrosPictures">
+                <img
+                  class="profile-picture"
+                  src="images/channel-pictures/profile-3.jpg"
+                  alt="wb-profile"
+                />
+              </a>
             </div>
             <div class="video-info">
-              <p class="video-title">Dune: Part Two | Official Trailer 3</p>
-              <p class="video-author">Warner Bros. Pictures</p>
+              <a href="https://www.youtube.com/watch?v=U2Qp5pL3ovA&t=20s">
+                <p class="video-title">Dune: Part Two | Official Trailer 3</p>
+              </a>
+              <a href="https://www.youtube.com/@WarnerBrosPictures">
+                <p class="video-author">Warner Bros. Pictures</p>
+              </a>
               <p class="video-stats">16M views &#xb7; 2 months ago</p>
             </div>
           </div>
         </div>
 
         <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="images/thumbnail-4.avif" alt="marko" />
-            <div class="time"><p>10:18</p></div>
-          </div>
+          <a href="https://www.youtube.com/watch?v=tQG6jYy9xto&t=21s">
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="images/thumbnail-4.avif"
+                alt="marko"
+              />
+              <div class="time"><p>10:18</p></div>
+            </div>
+          </a>
           <div class="video-info-grid">
             <div class="channel-picture">
-              <img
-                class="profile-picture"
-                src="images/channel-pictures/profile-4.jpg"
-                alt="marko-profile"
-              />
+              <a href="https://www.youtube.com/@withmarko">
+                <img
+                  class="profile-picture"
+                  src="images/channel-pictures/profile-4.jpg"
+                  alt="marko-profile"
+                />
+              </a>
             </div>
             <div class="video-info">
-              <p class="video-title">
-                Day in the Life of a Software Engineer - First Person View -...
-              </p>
-              <p class="video-author">Marko</p>
+              <a href="https://www.youtube.com/watch?v=tQG6jYy9xto&t=21s">
+                <p class="video-title">
+                  Day in the Life of a Software Engineer - First Person View
+                  -...
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@withmarko">
+                <p class="video-author">Marko</p>
+              </a>
               <p class="video-stats">3M views &#xb7; 1 year ago</p>
             </div>
           </div>
         </div>
 
         <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="images/thumbnail-5.avif" alt="mkbhd" />
+          <a
+            href="https://www.youtube.com/watch?v=X7vVP7F3-wM&t=82s&pp=ygU6SW50ZXJ2aWV3IHdpdGggR29vZ2xlIENFTyBTdW5kYXIgUGljaGFpIGF0IEdvb2dsZSBJL08gMjAyMg%3D%3D"
+          >
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="images/thumbnail-5.avif"
+                alt="mkbhd"
+              />
 
-            <div class="time"><p>10:15</p></div>
-          </div>
+              <div class="time"><p>10:15</p></div>
+            </div>
+          </a>
           <div class="video-info-grid">
             <div class="channel-picture">
-              <img
-                class="profile-picture"
-                src="images/channel-pictures/profile-5.jpg"
-                alt="mkbhd-profile"
-              />
+              <a href="https://www.youtube.com/@iJustine">
+                <img
+                  class="profile-picture"
+                  src="images/channel-pictures/profile-5.jpg"
+                  alt="mkbhd-profile"
+                />
+              </a>
             </div>
             <div class="video-info">
-              <p class="video-title">
-                Interview with Google CEO Sundar Pichai at Google I/O 2022
-              </p>
-              <p class="video-author">iJustine</p>
+              <a
+                href="https://www.youtube.com/watch?v=X7vVP7F3-wM&t=82s&pp=ygU6SW50ZXJ2aWV3IHdpdGggR29vZ2xlIENFTyBTdW5kYXIgUGljaGFpIGF0IEdvb2dsZSBJL08gMjAyMg%3D%3D"
+              >
+                <p class="video-title">
+                  Interview with Google CEO Sundar Pichai at Google I/O 2022
+                </p>
+              </a>
+              <a href="https://www.youtube.com/@iJustine">
+                <p class="video-author">iJustine</p>
+              </a>
               <p class="video-stats">2.5M views &#xb7; 1 year ago</p>
             </div>
           </div>
         </div>
 
         <div class="video-preview">
-          <div class="thumbnail-row">
-            <img class="thumbnail" src="images/thumbnail-6.avif" alt="mkbhd" />
+          <a
+            href="https://www.youtube.com/watch?v=p9Q5a1Vn-Hk&t=702s&pp=ygVMSW5zaWRlIE9wZW5BSSwgdGhlIEFyY2hpdGVjdCBvZiBDaGF0R1BULCBmZWF0dXJpbmcgTWlyYSBNdXJhdGkgfCBUaGUgQ2lyY3VpdA%3D%3D"
+          >
+            <div class="thumbnail-row">
+              <img
+                class="thumbnail"
+                src="images/thumbnail-6.avif"
+                alt="mkbhd"
+              />
 
-            <div class="time"><p>24:02</p></div>
-          </div>
+              <div class="time"><p>24:02</p></div>
+            </div>
+          </a>
           <div class="video-info-grid">
             <div class="channel-picture">
-              <img
-                class="profile-picture"
-                src="images/channel-pictures/profile-6.jpg"
-                alt="mkbhd-profile"
-              />
+              <a href="https://www.youtube.com/bloomberg">
+                <img
+                  class="profile-picture"
+                  src="images/channel-pictures/profile-6.jpg"
+                  alt="mkbhd-profile"
+                />
+              </a>
             </div>
             <div class="video-info">
-              <p class="video-title">
-                Inside OpenAI, the Architect of ChatGPT, featuring Mira Murati |
-                The Circuit with...
-              </p>
-              <p class="video-author">Bloomberg Originals</p>
+              <a
+                href="https://www.youtube.com/watch?v=p9Q5a1Vn-Hk&t=702s&pp=ygVMSW5zaWRlIE9wZW5BSSwgdGhlIEFyY2hpdGVjdCBvZiBDaGF0R1BULCBmZWF0dXJpbmcgTWlyYSBNdXJhdGkgfCBUaGUgQ2lyY3VpdA%3D%3D"
+              >
+                <p class="video-title">
+                  Inside OpenAI, the Architect of ChatGPT, featuring Mira Murati
+                  | The Circuit with...
+                </p>
+              </a>
+              <a href="https://www.youtube.com/bloomberg">
+                <p class="video-author">Bloomberg Originals</p>
+              </a>
               <p class="video-stats">1.7M views &#xb7; 8 months ago</p>
             </div>
           </div>

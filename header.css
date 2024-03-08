@@ -37,6 +37,11 @@ header {
   justify-content: center;
 }
 
+form {
+  width: 100%;
+  display: flex;
+}
+
 .search-bar {
   flex: 1;
   height: 36px;
